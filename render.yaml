@@ -3,11 +3,11 @@ services:
     name: nexus-business-suite
     env: node
     plan: free
-    buildCommand: rm -rf backend/node_modules frontend/node_modules && npm run build && cd backend && npm rebuild
+    buildCommand: rm -rf node_modules backend/node_modules frontend/node_modules backend/package-lock.json frontend/package-lock.json && npm run build && cd backend && npm rebuild
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
-        value: 20
+        value: 18
       - key: GEMINI_API_KEY
         sync: false
       - key: PORT

@@ -9,7 +9,7 @@
     "build": "npm run install:all && npm run build:frontend"
   },
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "keywords": [],
   "author": "Pablo Marvin",
