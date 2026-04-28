@@ -3,7 +3,7 @@ services:
     name: nexus-business-suite
     env: node
     plan: free
-    buildCommand: npm run build && npm rebuild
+    buildCommand: rm -rf backend/node_modules frontend/node_modules && npm run build && cd backend && npm rebuild
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
