@@ -8,6 +8,9 @@
     "start": "cd backend && node server.js",
     "build": "npm run install:all && npm run build:frontend"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "keywords": [],
   "author": "Pablo Marvin",
   "license": "ISC"

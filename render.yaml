@@ -3,12 +3,12 @@ services:
     name: nexus-business-suite
     env: node
     plan: free
-    buildCommand: npm run build
+    buildCommand: npm run build && npm rebuild
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
         value: 20
       - key: GEMINI_API_KEY
-        sync: false # You will enter this in the dashboard
+        sync: false
       - key: PORT
         value: 5000
